@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<style>
+  .hi {
+    padding-top: 10px;
+  }
+
+  .cn{
+    padding-bottom: 40px;
+  }
+  .cnt {
+    padding-top: 6%;
+    color: rgb(0, 0, 0);
+  }
+
+  .cnt:hover {
+    color: rgba(0, 0, 0, 0.425);
+  }
+
+  .cnt h1 {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 20px;
+  }
+
+  .icon {
+    text-align: center;
+  }
+
+  .icon ion-icon {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    font-size: 20px;
+  }
+
+  .icon ion-icon:hover {
+    color: rgba(137, 126, 201, 0.452);
+    font-size: 30px;
+  }
+
+  .cn {
+    /* margin-left: 10px; */
+    text-align: center;
+    /* position: fixed; */
+    bottom: 0;
+  }
+
+  .contain{
+    text-align: center;
+    padding-top: 30px;
+  }
+
+  .p{
+    padding-top: 20px;
+  }
+
+  .contain{
+    text-align: center;
+  }
+
+  .contain h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgba(0, 0, 0, 0.493);
+    width: 35%;
+    text-align: center;
+    margin-left: 30%;
+    border-radius: 10px;
+  }
+
+
+
+
+</style>
+
+<body>
+
+
+
+
+
+ <!-- <div class="container">
+    <header class="d-flex justify-content-center py-3">
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+      </ul>
+    </header>
+  </div> --> 
+
+
+
+
+  <div class="contain">
+    <h1>BEST PLACE TO VISIT</h1>
+  </div>
+
+<div class="p">
+  <div id="carouselExampleInterval" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="https://source.unsplash.com/1400x400/?travel" alt="...">
+      </div>
+
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="https://source.unsplash.com/1400x400/?advanture" class="d-block w-100" alt="...">
+      </div>
+
+      <div class="carousel-item">
+        <img src="https://source.unsplash.com/1400x400/?trip" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+
+
+
+  <div class="hi my-4">
+
+    <!-- SENTORINI -->
+
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary"></strong>
+            <h3 class="mb-0">SANTORINI</h3>
+            <div class="mb-1 text-muted"></div>
+            <p class="card-text mb-auto">Over the last few years, Santorini has managed to make its presence felt in the
+              tourist industry, becoming one of the most famous destinations worldwide... </p>
+            <a href="sentorini.html" class="stretched-link">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img
+              src="data:image/jpeg;base64,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"
+              class="bd-placeholder-img" width="200" height="250" alt="">
+
+          </div>
+        </div>
+      </div>
+
+
+
+      <!-- BERLIN -->
+
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success"></strong>
+            <h3 class="mb-0">BERLIN</h3>
+            <div class="mb-1 text-muted"></div>
+            <p class="mb-auto">A city as old as 775 years has much to offer than just a vacation. Berlin—the capital city of Germany is one of the busiest metropolises of today’s time..</p>
+            <a href="berlin.html" class="stretched-link">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img src="https://c4.wallpaperflare.com/wallpaper/492/1012/59/monuments-brandenburg-gate-berlin-germany-wallpaper-preview.jpg" class="bd-placeholder-img" width="200" height="250" alt="">
+
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+      <!-- BALI -->
+
+
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success"></strong>
+            <h3 class="mb-0">BALI</h3>
+            <div class="mb-1 text-muted"></div>
+            <p class="mb-auto">Bali is one of the most evocative places to visit in the entire Indonesian archipelago. A visit here sparks the senses. The intoxicating fragrance of incense and clove oil hangs in... </p>
+            <a href="bali.html" class="stretched-link">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img src="https://www.theknot.com/tk-media/images/0108e30b-f23f-4d5b-bacb-c13df8215c94" width="200" height="250" alt="">
+
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+      <!-- DUBAI -->
+
+
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success"></strong>
+            <h3 class="mb-0">DUBAI</h3>
+            <div class="mb-1 text-muted"></div>
+            <p class="mb-auto">The best time to visit Dubai is during the winter months from November to March when the weather is pleasant and you can enjoy sightseeing throughout the day. In the Summer months, the weather is hot and humid and you must plan your trip in winters.... </p>
+            <a href="dubai.html" class="stretched-link">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img src="https://media.istockphoto.com/photos/dubai-marina-picture-id467829216?b=1&k=20&m=467829216&s=170667a&w=0&h=axrdEjmP9M3aUtuc-HKs5KIuQ-h02rz8xQKCkWiWpRI=" width="200" height="250" alt="">
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+  <div class="cn">
+    <div class="cnt">
+      <h1>CONTACT</h1>
+    </div>
+
+    <div class="icon">
+      <a href="mailto:psutariya14@gmail.com">
+        <ion-icon name="mail-outline"></ion-icon>
+      </a>
+      <a href="https://www.instagram.com/prit_sutariya16/">
+        <ion-icon name="logo-instagram"></ion-icon>
+      </a>
+      <a href="https://api.whatsapp.com/send?phone=9664574800">
+        <ion-icon name="logo-whatsapp"></ion-icon>
+      </a>
+      <a href="tel:9664574800">
+        <ion-icon name="call-outline"></ion-icon>
+      </a>
+
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+    integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+    crossorigin="anonymous"></script>
+</body>
+
+<!-- <script>
+  alert("welcome")
+</script> -->
+
+</html>
